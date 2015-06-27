@@ -1,0 +1,22 @@
+<head>
+  <title>Recipe Name</title>
+</head>
+
+<body>
+
+
+</body>
+
+<template name="ingredient">
+  {{#with currentIngredient}}
+    <li>{{name}}</li>
+  {{/with}}
+</template>
+
+<template name="recipe">
+  <ul id="ingredients_list">
+  {{#each ingredients}}
+    {{> ingredient}}
+  {{/each}}
+  </ul>
+</template>
