@@ -18,7 +18,7 @@
 </template>
 
 <template name="recipe">
-
+  <a href="/recipes/{{_id}}">
 	  <div class="pin">
 		  <h3>{{name}} </h3>
 		  <h4 class="duration">Duration:</h4>
@@ -26,5 +26,6 @@
 		  <img src={{mainImage}} class="mainImage" />
 		  <div class="summary">{{summary}}</div>
 	  </div>
+  </a>
 
 </template>
