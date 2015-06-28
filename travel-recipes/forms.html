@@ -29,8 +29,10 @@
 
 <template name="addIngredientToRecipe">
 	{{> recipeItem}}
-	<!--later, add an if logged in and owner to show this template -->
-	{{> ingredientForm}}
+
+	{{#if isUserAndCreator}}
+		{{> ingredientForm}}
+	{{/if}}
 </template>
 
 <template name="ingredientForm">
