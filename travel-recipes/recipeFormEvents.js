@@ -13,5 +13,25 @@ if (Meteor.isClient) {
 			Router.go("/recipes/" + recipeId)
 			return false
 		}
+	}),
+	Template.ingredientForm.events({
+		"click #submitIngredient": function(event) {
+			event.preventDefault();
+			var recipeId = Router.current().params._id
+			var selected = document.getElementById("ingredientType");
+			var ingredientId = Ingredients.insert({
+				type: selected.options[selected.selectedIndex].value,
+				name: $("input[name='name']").val(),
+				cost: $("input[name='cost']").val(),
+				duration: $("input[name='duration']").val(),
+				address: $("input[name='address']").val(),
+				website: $("input[name='website']").val()
+			})
+			Recipes.update( {_id: recipeId},
+							{$addToSet: {ingredients: ingredientId}}
+			)
+			Router.go("/recipes/" + recipeId)
+		}
 	})
 }
+
