@@ -12,3 +12,4 @@ twbs:bootstrap
 mrt:jquery-ui
 accounts-ui
 accounts-password
+momentjs:moment

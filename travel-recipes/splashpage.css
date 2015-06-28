@@ -39,12 +39,8 @@ h1 {
   font-family: avenir, sans-serif;
 }
 
-.lower_half {
-	position: absolute;
-	top: 500px;
-	left: 100px;
+#lower_half {
+	margin-top: 170px;
 	font-size: 2em;
-	text-align: center;
-	margin: auto;
-	width: 50%;
+	text-align: center;	
 }
