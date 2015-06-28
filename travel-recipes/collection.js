@@ -3,6 +3,7 @@ Ingredients = new Mongo.Collection("ingredients");
 
 if (Meteor.isServer) {
 	Meteor.startup(function () {
+		// Recipes.remove({});
 		if (Recipes.find().count() === 0) {
 			Recipes.insert({
 				name: "French Wine Tour",
