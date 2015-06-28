@@ -1,10 +1,16 @@
-<head>
-  <title>Travel Recipes</title>
-</head>
+<template name="recipeItem">
+	<div class="container">
+		<h2>Ingredients</h2>
+			<ul id="ingredients_list">
+		  	{{#each ingredients}}
+		    	{{> ingredient}}
+		  	{{/each}}
+		  	</ul>
+	</div>	
 
-<body>
 
-</body>
+
+</template>
 
 <template name="ingredient">
   {{#with currentIngredient}}
@@ -20,21 +26,3 @@
 
 </template>
 
-<template name="recipeItem">
-  <ul id="ingredients_list">
-  {{#each ingredients}}
-    {{> ingredient}}
-  {{/each}}
-  </ul>
-</template>
-
-<!--
-<template name="ingredientDetails">
-  <ul class="additional-details">
-    <li>{{duration}}</li>
-    <li>{{cost}}</li>
-    <li>{{address}}</li>
-    <li>{{website}}</li>
-  </ul>
-</template>
--->

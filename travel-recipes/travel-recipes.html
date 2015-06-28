@@ -1,9 +1,4 @@
-<head>
-  <title>travel-recipes</title>
-  <link rel="stylesheet" type="text/css" href="travel-recipes.css">
-</head>
-
-<body class="container">
+<body>
 
 </body>
 
@@ -20,9 +15,9 @@
 <template name="recipe">
   <a href="/recipes/{{_id}}">
 	  <div class="pin">
-		  <h3>{{name}} </h3>	  
-		  <h4 class="duration">{{duration}} days</h4>
-		  <h5 class="title">{{location}}</h5>
+		  <p>{{name}} </p>	  
+		  <p class="duration">{{duration}} days</p>
+		  <p class="title">{{location}}</p>
 		  <img src={{mainImage}} class="mainImage" />
 		  <p class="summary">{{summary}}</p>
 	  </div>

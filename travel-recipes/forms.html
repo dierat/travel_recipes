@@ -1,27 +1,29 @@
 <template name="recipeForm">
+	<div class="container">
 	<form>
-		<p>
+		<div class="form-group">
 			<label for="name">Name</label>
-			<input type="text" name="name" placeholder="Name your recipe."/>
-		</p>
-		<p>
+			<input type="text" name="name" class="form-control" placeholder="Name your recipe."/>
+		</div>
+		<div class="form-group">
 			<label for="location">Location</label>
-			<input type="text" name="location" placeholder="Enter the city, country, or region of this trip."/>
-		</p>
-		<p>
+			<input type="text" name="location" class="form-control" placeholder="Enter the city, country, or region of this trip."/>
+		</div>
+		<div class="form-group">
 			<label for="duration">Duration</label>
-			<input type="text" name="duration" placeholder="How many days will your trip be?"/>
-		</p>
-		<p>
+			<input type="text" name="duration" class="form-control" placeholder="How many days will your trip be?"/>
+		</div>
+		<div class="form-group">
 			<label for="mainImage">Picture</label>
-			<input type="text" name="mainImage" placeholder="Add the url of an image"/>
-		</p>
-		<p>
+			<input type="text" name="mainImage" class="form-control" placeholder="Add the url of an image"/>
+		</div>
+		<div class="form-group">
 			<label for="summary">Summary</label>
-			<textarea name="summary" placeholder="Add a summary of your trip here"> </textarea>
-		</p>
+			<textarea name="summary" class="form-control" placeholder="Add a summary of your trip here"> </textarea>
+		</div>
 	</form>
-	<input type="button" id="submitRecipe" value="Submit"/>
+	<input type="button" class="btn btn-default" id="submitRecipe" value="Submit"/>
+	</div>
 </template>
 
 
