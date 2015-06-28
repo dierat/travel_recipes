@@ -3,7 +3,11 @@
   <link rel="stylesheet" type="text/css" href="travel-recipes.css">
 </head>
 
-<body>
+<body class="container">
+
+</body>
+
+<template name="travelRecipes">
 <div id="wrapper">
 	  <div id="column">
 	  	{{#each recipes}}
@@ -11,16 +15,17 @@
 	  	{{ /each}}
 	 </div>
 </div>
-</body>
+</template>
 
 <template name="recipe">
-	
+  <a href="/recipes/{{_id}}">
 	  <div class="pin">
 		  <h3>{{name}} </h3>	  
-		  <h4 class="duration">Duration:</h4>
+		  <h4 class="duration">{{duration}} days</h4>
 		  <h5 class="title">{{location}}</h5>
 		  <img src={{mainImage}} class="mainImage" />
-		  <div class="summary">{{summary}}</div>
+		  <p class="summary">{{summary}}</p>
 	  </div>
+  </a>
 
 </template>
