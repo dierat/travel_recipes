@@ -35,9 +35,10 @@
 
 <template name="ingredientForm">
 	<h3> Add a new ingredient to your recipe </h3>
+	<form>
 		<p>
 			<label>Type</label>
-			<select>
+			<select id="ingredientType">
 				<option value="lodging">Lodging</option>
 				<option value="transportation">Transportation</option>
 				<option value="activity">Activity</option>
@@ -64,4 +65,6 @@
 			<label for="website">Website</label>
 			<input type="text" name="website" placeholder="Add the url if available"/>
 		</p>
+	</form>	
+	<input type="button" id="submitIngredient" value="Submit"/>
 </template>
