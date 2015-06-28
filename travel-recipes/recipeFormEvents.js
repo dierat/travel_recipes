@@ -8,7 +8,8 @@ if (Meteor.isClient) {
 				duration: $("input[name='duration']").val(),
 				mainImage: $("input[name='mainImage']").val(),
 				summary: $("textarea[name='summary']").val(),
-				dateCreated: new Date()
+				dateCreated: new Date(),
+				userName: Meteor.user().username
 			}); 
 			
 			Router.go("/recipes/" + recipeId)
