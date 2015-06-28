@@ -4,7 +4,7 @@ if (Meteor.isClient) {
 
   Template.travelRecipes.helpers({
       recipes: function(){
-        return Recipes.find()
+        return Recipes.find({}, {sort: {dateCreated: -1}})
       }
   });
 
