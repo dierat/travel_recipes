@@ -27,6 +27,7 @@ if (Meteor.isClient) {
 				cost: $("input[name='cost']").val(),
 				duration: $("input[name='duration']").val(),
 				address: $("input[name='address']").val(),
+				ingredientPic: $("input[name='ingredientPic']").val(),
 				website: $("input[name='website']").val()
 			})
 			Recipes.update( {_id: recipeId},
