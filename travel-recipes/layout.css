@@ -3,7 +3,6 @@ body{
 }
 .main-header h1 a{
 	text-decoration: none;
-
 }
 
 h3{
@@ -16,4 +15,10 @@ div.login-link-text {
 }
 .add-receipe{
 	padding-left: 10px;
+}
+ul.nav.navbar-nav.navbar-right{
+	margin-top: 20px;
+}
+#login-buttons a{
+	font-size: 20px;
 }
