@@ -1,0 +1,59 @@
+<template name="recipeForm">
+	<form>
+		<p>
+			<label for="name">Name</label>
+			<input type="text" name="name" placeholder="Name your recipe."/>
+		</p>
+		<p>
+			<label for="location">Location</label>
+			<input type="text" name="location" placeholder="Enter the city, country, or region of this trip."/>
+		</p>
+		<p>
+			<label for="duration">Duration</label>
+			<input type="text" name="duration" placeholder="How many days will your trip be?"/>
+		</p>
+		<p>
+			<label for="mainImage">Picture</label>
+			<input type="text" name="mainImage" placeholder="Add the url of an image"/>
+		</p>
+		<p>
+			<label for="summary">Summary</label>
+			<textarea name="summary" placeholder="Add a summary of your trip here"> </textarea>
+		</p>
+	</form>
+	<input type="button" id="submitRecipe" value="Submit"/>
+</template>
+
+
+<template name="ingredientForm">
+	<h3> Add a new ingredient to your recipe </h3>
+		<p>
+			<label>Type</label>
+			<select>
+				<option value="lodging">Lodging</option>
+				<option value="transportation">Transportation</option>
+				<option value="activity">Activity</option>
+				<option value="food">Food</option>
+			</select>
+		</p>
+		<p>
+			<label for="name">Name</label>
+			<input type="text" name="name" placeholder="Give it a name"/>
+		</p>
+		<p>
+			<label for="cost">Approximate Cost</label>
+			<input type="text" name="cost" placeholder="How much do you expect it will cost?"/>
+		</p>
+		<p>
+			<label for="duration">Duration</label>
+			<input type="text" name="duration" placeholder="How long do you expect it to last?"/>
+		</p>
+		<p>
+			<label for="address">Address</label>
+			<input type="text" name="address" placeholder="Where is it?"/>
+		</p>
+		<p>
+			<label for="website">Website</label>
+			<input type="text" name="website" placeholder="Add the url if available"/>
+		</p>
+</template>

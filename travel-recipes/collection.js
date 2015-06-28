@@ -35,7 +35,7 @@ if (Meteor.isServer) {
 			Ingredients.insert({
 				name: "Grand Hotel",
 				type: "lodging",
-				duration: 3,
+				duration: "3 days",
 				cost: 85,
 				address: "123 Main St., Paris, France",
 				website: "www.grandhotel.com"
@@ -43,7 +43,7 @@ if (Meteor.isServer) {
 			Ingredients.insert({
 				name: "wine",
 				type: "activity",
-				duration: 4,
+				duration: "4 hours",
 				cost: 95,
 				address: "223 Main St., Paris, France",
 				website: "www.champagne.com"
@@ -51,7 +51,7 @@ if (Meteor.isServer) {
 			Ingredients.insert({
 				name: "taxi",
 				type: "transportation",
-				duration: 1,
+				duration: "1 hour",
 				cost: 25,
 				address: "523 Main St., Paris, France",
 				website: "www.yellowtaxi.com"

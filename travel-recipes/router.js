@@ -4,6 +4,10 @@ Router.configure({
 
 Router.route("/", {name: "travelRecipes"});
 
+Router.route("/recipes/add", {
+  name: "recipeForm"
+})
+
 Router.route("/recipes/:_id", {
   name: "recipeItem",
   data: function(){
@@ -12,6 +16,3 @@ Router.route("/recipes/:_id", {
   }
 })
 
-Router.route("/recipes/add", {
-  name: "recipeForm"
-})
