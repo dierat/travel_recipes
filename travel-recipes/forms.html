@@ -25,6 +25,12 @@
 </template>
 
 
+<template name="addIngredientToRecipe">
+	{{> recipeItem}}
+	<!--later, add an if logged in and owner to show this template -->
+	{{> ingredientForm}}
+</template>
+
 <template name="ingredientForm">
 	<h3> Add a new ingredient to your recipe </h3>
 		<p>
