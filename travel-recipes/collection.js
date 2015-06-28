@@ -31,7 +31,7 @@ if (Meteor.isServer) {
 			});
 		}
 		// Ingredients.remove({});
-		if (Ingredients.find().count() === 0) {
+		/*if (Ingredients.find().count() === 0) {
 			Ingredients.insert({
 				name: "Grand Hotel",
 				type: "lodging",
@@ -56,6 +56,6 @@ if (Meteor.isServer) {
 				address: "523 Main St., Paris, France",
 				website: "www.yellowtaxi.com"
 			});
-		}
+		}*/
 	})
 }

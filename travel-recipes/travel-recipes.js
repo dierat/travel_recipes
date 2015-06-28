@@ -8,6 +8,11 @@ if (Meteor.isClient) {
       }
   });
 
+  Template.registerHelper(
+     'dateCreatedFromNow', function() {
+      return moment(this.dateCreated).fromNow();
+  })
+
 
 }
 
