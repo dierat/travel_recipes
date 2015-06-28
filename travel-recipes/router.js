@@ -2,7 +2,7 @@ Router.configure({
   layoutTemplate: 'layout'
 });
 
-Router.route("/", {name: "splashPage"});
+Router.route("/", {name: "mainPage"});
 
 Router.route("/recipes/add", {
   name: "recipeForm"

@@ -1,0 +1,7 @@
+<template name="mainPage">
+	{{#if currentUser}}
+		{{> travelRecipes}}
+	{{else}}
+		{{> splashPage}}
+	{{/if}}
+</template>
