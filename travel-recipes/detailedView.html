@@ -18,26 +18,15 @@
 
 <template name="ingredient">
   {{#with currentIngredient}}
-    <div id="drop-down-button">{{name}}: {{type}}</div>
+    <details>
+    <summary id="drop-down-button">{{name}}: {{type}}</summary>
     <ul class="additional-details">
       <li>Duration: {{duration}}</li>
       <li>Cost: ${{cost}}</li>
       <li>Address: {{address}}</li>
       <li>Website: {{website}}</li>
     </ul>
+    </details>
   {{/with}}
-
 </template>
 
-
-
-<!--
-<template name="ingredientDetails">
-  <ul class="additional-details">
-    <li>{{duration}}</li>
-    <li>{{cost}}</li>
-    <li>{{address}}</li>
-    <li>{{website}}</li>
-  </ul>
-</template>
--->
