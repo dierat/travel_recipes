@@ -1,9 +1,16 @@
 .additional-details{
   display: none;
 }
+.additional-details img{
+	max-width: 400px;
+}
 #recipe-info{
 	padding-top:20px;
 }
 .main-img{
 	max-width: 600px;
+}
+
+li.ingredientPic{
+	list-style: none;
 }
