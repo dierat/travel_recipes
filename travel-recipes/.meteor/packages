@@ -10,3 +10,5 @@ insecure
 iron:router
 twbs:bootstrap
 mrt:jquery-ui
+accounts-ui
+accounts-password
