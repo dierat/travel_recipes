@@ -7,6 +7,14 @@ if (Meteor.isClient){
       return ing;
     }
   });
+  //add button jQuery functionality in template name Ingredient
+  Template.ingredient.events({
+    "click #drop-down-button": function(){
+      $(Template.instance().find(".additional-details")).slideToggle();
+    }
+  });
+
+
 }
 
 if (Meteor.isServer) {
