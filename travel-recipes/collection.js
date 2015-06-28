@@ -12,7 +12,7 @@ if (Meteor.isServer) {
 				mainImage: "http://1af60cd74e95fe387bc8-1bfee98aeb105b45275a9419b6310abb.r63.cf1.rackcdn.com/164/2/large.jpg",
 				summary: "This will be so cool!",
 				ingredients: ["ing1", "ing2", "ing3"]
-			}); 
+			});
 			Recipes.insert({
 				name: "Our Trip",
 				location: "Australia",
@@ -20,7 +20,7 @@ if (Meteor.isServer) {
 				mainImage: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSu70QunAdWz8tA0NulCGphvFhvipWDQFv34hw6ncdo6GFvaXjL",
 				summary: "All-over Austrailia",
 				ingredients: ["ing1", "ing2", "ing3"]
-			}); 
+			});
 			Recipes.insert({
 				name: "Backpacking",
 				location: "Yosemite",
@@ -30,6 +30,7 @@ if (Meteor.isServer) {
 				ingredients: ["ing1", "ing2", "ing3"]
 			});
 		}
+		// Ingredients.remove({});
 		if (Ingredients.find().count() === 0) {
 			Ingredients.insert({
 				name: "Grand Hotel",
