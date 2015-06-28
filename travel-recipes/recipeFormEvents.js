@@ -7,7 +7,8 @@ if (Meteor.isClient) {
 				location: $("input[name='location']").val(),
 				duration: $("input[name='duration']").val(),
 				mainImage: $("input[name='mainImage']").val(),
-				summary: $("textarea[name='summary']").val()
+				summary: $("textarea[name='summary']").val(),
+				dateCreated: new Date()
 			}); 
 			
 			Router.go("/recipes/" + recipeId)
