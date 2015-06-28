@@ -6,7 +6,9 @@
 
 <header class="container">
   <h1><a href="/">Travel Recipes</a>
-  	<a href="/recipes/add"><span class="glyphicon glyphicon-plus"></span></a>
+    {{#if currentUser}}
+  	  <a href="/recipes/add"><span class="glyphicon glyphicon-plus"></span></a>
+  	{{/if}}
   	{{> loginButtons}}
   </h1>
 </header>
