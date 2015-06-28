@@ -36,9 +36,10 @@
 </template>
 
 <template name="ingredientForm">
+<div class="container">
 	<h3> Add a new ingredient to your recipe </h3>
 	<form>
-		<p>
+		<div class="form-group">
 			<label>Type</label>
 			<select id="ingredientType">
 				<option value="lodging">Lodging</option>
@@ -46,27 +47,28 @@
 				<option value="activity">Activity</option>
 				<option value="food">Food</option>
 			</select>
-		</p>
-		<p>
+		</div>
+		<div class="form-group">
 			<label for="name">Name</label>
-			<input type="text" name="name" placeholder="Give it a name"/>
-		</p>
-		<p>
+			<input type="text" name="name" class="form-control" placeholder="Give it a name"/>
+		</div>
+		<div class="form-group">
 			<label for="cost">Approximate Cost</label>
-			<input type="text" name="cost" placeholder="How much do you expect it will cost?"/>
-		</p>
-		<p>
+			<input type="text" name="cost" class="form-control" placeholder="How much do you expect it will cost?"/>
+		</div>
+		<div class="form-group">
 			<label for="duration">Duration</label>
-			<input type="text" name="duration" placeholder="How long do you expect it to last?"/>
-		</p>
-		<p>
+			<input type="text" name="duration" class="form-control" placeholder="How long do you expect it to last?"/>
+		</div>
+		<div class="form-group">
 			<label for="address">Address</label>
-			<input type="text" name="address" placeholder="Where is it?"/>
-		</p>
-		<p>
+			<input type="text" name="address" class="form-control" placeholder="Where is it?"/>
+		</div>
+		<div class="form-group">
 			<label for="website">Website</label>
-			<input type="text" name="website" placeholder="Add the url if available"/>
-		</p>
+			<input type="text" name="website" class="form-control" placeholder="Add the url if available"/>
+		</div>
 	</form>	
 	<input type="button" id="submitIngredient" value="Submit"/>
+	</div>
 </template>

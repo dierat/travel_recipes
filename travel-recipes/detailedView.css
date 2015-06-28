@@ -1,3 +1,9 @@
 .additional-details{
   display: none;
 }
+#recipe-info{
+	padding-top:20px;
+}
+.main-img{
+	max-width: 600px;
+}

@@ -1,12 +1,12 @@
 <template name="recipeItem">
 	<div class="container">
-    <div id="recipe-info">
-      <img src="{{mainImage}}">
-      <h2>{{name}}</h2>
-      <h3>{{location}}</h3>
-      <h3>{{duration}} days</h3>
-      <p>{{summary}}</p>
-    </div>
+	    <div id="recipe-info">
+	      <img src="{{mainImage}}" class="main-img img-rounded">
+	      <h2>{{name}}</h2>
+	      <h3>{{location}}</h3>
+	      <h3>{{duration}} days</h3>
+	      <p>{{summary}}</p>
+	    </div>
 		<h2>Ingredients</h2>
 			<ul id="ingredients_list">
 		  	{{#each ingredients}}
