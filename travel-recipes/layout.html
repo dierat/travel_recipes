@@ -3,14 +3,26 @@
 </head>
 
 <template name="layout">
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	    <div class="container">
+	        <div class="navbar-header">
+	           	{{#if currentUser}} 
+			<h1 class="currentUser">{{username}} Collections <a href="/recipes/add"><span class="glyphicon glyphicon-plus"></span></a></h1>
+			
+	            {{else}}
+	            <a class="navbar-brand" href="/">Travel Recipes</a>
+	            {{/if}}
 
-<header class="container">
-  <h1><a href="/">Travel Recipes</a>
-    {{#if currentUser}}
-  	  <a href="/recipes/add"><span class="glyphicon glyphicon-plus"></span></a>
-  	{{/if}}
-  	{{> loginButtons}}
-  </h1>
-</header>
+	        </div>
+
+	        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	          
+	            <ul class="nav navbar-nav navbar-right">
+	                <li>{{> loginButtons}}</li>
+	            </ul>
+	        </div>
+	    </div>
+	</nav>
+
   {{> yield}}
 </template>

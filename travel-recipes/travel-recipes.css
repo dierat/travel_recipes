@@ -1,5 +1,6 @@
 body {
 	background: url(http://subtlepatterns.com/patterns/scribble_light.png) ;
+	margin-top: 100px;
 }
 
 #wrapper h3,#wrapper h4,#wrapper h5{
