@@ -7,7 +7,10 @@
 	    <div class="container col-lg-8 col-lg-offset-1">
 	        <div class="navbar-header">
 	           	{{#if currentUser}} 
-			<h3><a href="/">Travel Recipes</a> <a href="/recipes/add"><span class="glyphicon glyphicon-plus add-receipe" title="Add Receipe"></span></a></h3>
+
+				<h3>Travel Recipes
+				<a class="btn btn-info" href="/recipes/add" role="button"><span class="glyphicon glyphicon-plus add-recipe" title="Add Receipe"></span> Create new recipe</a>
+				</h3>
 			
 	            {{else}}
 	            <h3>Travel Recipes</h3>

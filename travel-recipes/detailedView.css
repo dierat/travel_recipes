@@ -10,10 +10,14 @@
 
 #recipe-info p{
 	font-size: 16px;
+	margin-top: 5px;
 }
 
 #recipe-info h2{
-
+	margin-bottom: 0;
+}
+#recipe-info h3{
+	margin: 5px 0 0 0;
 }
 .main-img{
 	max-width: 600px;
@@ -24,5 +28,11 @@ li.ingredientPic{
 }
 
 ul#ingredients_list{
-	font-size: 24px;
+	font-size: 20px;
+	
+}
+
+ul#ingredients_list li{
+	list-style: none;
+
 }
