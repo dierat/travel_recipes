@@ -5,3 +5,16 @@ body{
 	text-decoration: none;
 
 }
+
+.currentUser{
+	font-size: 50px;
+	color: #5e5e5e;
+}
+
+div.login-link-text {
+  margin-top: 36px;
+  font-size: 18px;
+}
+.add-receipe{
+	padding-left: 10px;
+}
