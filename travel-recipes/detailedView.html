@@ -1,24 +1,27 @@
 <template name="recipeItem">
 	<div class="container">
+    <div id="recipe-info">
+      <img src="{{mainImage}}">
+      <h2>{{name}}</h2>
+      <h3>{{location}}</h3>
+      <h3>{{duration}} days</h3>
+      <p>{{summary}}</p>
+    </div>
 		<h2>Ingredients</h2>
 			<ul id="ingredients_list">
 		  	{{#each ingredients}}
 		    	{{> ingredient}}
 		  	{{/each}}
 		  	</ul>
-	</div>	
-
-
-
+	</div>
 </template>
 
 <template name="ingredient">
   {{#with currentIngredient}}
     <div id="drop-down-button">{{name}}: {{type}}</div>
-
     <ul class="additional-details">
-      <li>Duration: {{duration}}</li>
-      <li>Cost: {{cost}}</li>
+      <li>Duration: {{duration}} days</li>
+      <li>Cost: {{cost}}$</li>
       <li>Address: {{address}}</li>
       <li>Website: {{website}}</li>
     </ul>
@@ -26,3 +29,15 @@
 
 </template>
 
+
+
+<!--
+<template name="ingredientDetails">
+  <ul class="additional-details">
+    <li>{{duration}}</li>
+    <li>{{cost}}</li>
+    <li>{{address}}</li>
+    <li>{{website}}</li>
+  </ul>
+</template>
+-->
