@@ -11,7 +11,8 @@ if (Meteor.isServer) {
 				duration: 3,
 				mainImage: "http://1af60cd74e95fe387bc8-1bfee98aeb105b45275a9419b6310abb.r63.cf1.rackcdn.com/164/2/large.jpg",
 				summary: "This will be so cool!",
-				ingredients: ["ing1", "ing2", "ing3"]
+				dateCreated: new Date(),
+				userName: "diedra"
 			});
 			Recipes.insert({
 				name: "Our Trip",
@@ -19,7 +20,8 @@ if (Meteor.isServer) {
 				duration: 24,
 				mainImage: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSu70QunAdWz8tA0NulCGphvFhvipWDQFv34hw6ncdo6GFvaXjL",
 				summary: "All-over Austrailia",
-				ingredients: ["ing1", "ing2", "ing3"]
+				dateCreated: new Date(),
+				userName: "diedra"
 			});
 			Recipes.insert({
 				name: "Backpacking",
@@ -27,7 +29,8 @@ if (Meteor.isServer) {
 				duration: 6,
 				mainImage: "http://www.yosemitepark.com/Images/home-img-01.jpg",
 				summary: "Yoemite high-country trip",
-				ingredients: ["ing1", "ing2", "ing3"]
+				dateCreated: new Date(),
+				userName: "diedra"
 			});
 		}
 		// Ingredients.remove({});
