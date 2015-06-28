@@ -48,6 +48,7 @@ body {
 
 .pin img {
 	width: 222px;
+	height: 164px;
 	border-bottom: 1px solid #ccc;
 	padding-bottom: 15px;
 	margin-bottom: 5px;
