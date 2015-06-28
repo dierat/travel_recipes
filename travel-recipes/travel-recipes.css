@@ -1,6 +1,7 @@
 body {
 	background: url(http://subtlepatterns.com/patterns/scribble_light.png) ;
 	margin-top: 100px;
+
 }
 
 #wrapper h3,#wrapper h4,#wrapper h5{
@@ -57,9 +58,12 @@ body {
 
 .pin p {
 	max-width: 256px;
-	font: 12px/18px Arial, sans-serif;
+	font: 16px/24px Arial, sans-serif;
 	color: #333;
 	margin: 0;
+}
+.pin p.name{
+	font-weight: bold;
 }
 
 @media (min-width: 960px) {

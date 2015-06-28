@@ -7,10 +7,22 @@
 #recipe-info{
 	padding-top:20px;
 }
+
+#recipe-info p{
+	font-size: 16px;
+}
+
+#recipe-info h2{
+
+}
 .main-img{
 	max-width: 600px;
 }
 
 li.ingredientPic{
 	list-style: none;
+}
+
+ul#ingredients_list{
+	font-size: 24px;
 }
