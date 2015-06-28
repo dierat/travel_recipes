@@ -30,10 +30,15 @@ if (Meteor.isClient) {
 				ingredientPic: $("input[name='ingredientPic']").val(),
 				website: $("input[name='website']").val()
 			})
+			$("input[name='name']").val('');
+			$("input[name='cost']").val('');
+			$("input[name='duration']").val('');
+			$("input[name='address']").val('');
+			$("input[name='ingredientPic']").val('');
+			$("input[name='website']").val('');
 			Recipes.update( {_id: recipeId},
 							{$addToSet: {ingredients: ingredientId}}
 			)
-			Router.go("/recipes/" + recipeId)
 		}
 	})
 }
