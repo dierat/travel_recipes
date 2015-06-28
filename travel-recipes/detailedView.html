@@ -1,11 +1,15 @@
 <template name="recipeItem">
-<h2>Ingredients</h2>
+	<div class="container">
+		<h2>Ingredients</h2>
+			<ul id="ingredients_list">
+		  	{{#each ingredients}}
+		    	{{> ingredient}}
+		  	{{/each}}
+		  	</ul>
+	</div>	
 
-  <ul id="ingredients_list">
-  {{#each ingredients}}
-    {{> ingredient}}
-  {{/each}}
-  </ul>
+
+
 </template>
 
 <template name="ingredient">
