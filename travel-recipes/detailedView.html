@@ -8,8 +8,16 @@
 
 <template name="ingredient">
   {{#with currentIngredient}}
-    <li>{{name}} {{type}}</li>
+    <div id="drop-down-button">{{name}}: {{type}}</div>
+
+    <ul class="additional-details">
+      <li>Duration: {{duration}}</li>
+      <li>Cost: {{cost}}</li>
+      <li>Address: {{address}}</li>
+      <li>Website: {{website}}</li>
+    </ul>
   {{/with}}
+
 </template>
 
 <template name="recipeItem">
@@ -19,3 +27,14 @@
   {{/each}}
   </ul>
 </template>
+
+<!--
+<template name="ingredientDetails">
+  <ul class="additional-details">
+    <li>{{duration}}</li>
+    <li>{{cost}}</li>
+    <li>{{address}}</li>
+    <li>{{website}}</li>
+  </ul>
+</template>
+-->
