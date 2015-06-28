@@ -2,7 +2,9 @@ body {
 	margin-top: 100px;
 	background-color: #D7DCED;
 }
-
+.logo{
+	width: 60px;
+}
 #wrapper h3,#wrapper h4,#wrapper h5{
 	color: #5f5f5f;
 }
