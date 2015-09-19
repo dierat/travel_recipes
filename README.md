@@ -6,9 +6,10 @@ See it online! http://travel-recipes.meteor.com/
 
 ![Travel Recipes home page](http://i132.photobucket.com/albums/q17/dierat/Screen%20Shot%202015-09-18%20at%206.04.13%20PM.png)
 
+
 # The Team
 
-![team photo](http://i132.photobucket.com/albums/q17/dierat/CI_7O-DWsAAN8yz.jpg)
+![team photo after winning best use of MongoDB](http://i132.photobucket.com/albums/q17/dierat/CI_7O-DWsAAN8yz.jpg)
 *the team after winning Best Use of MongoDB at neohack15*
 <p>(from left to right)</p>
 - [Kristin Mayer](https://github.com/coldzonemt)
@@ -17,6 +18,8 @@ See it online! http://travel-recipes.meteor.com/
 - [Danielle Gellis](https://github.com/danisyellis)
 - [Michelle Wu](https://github.com/MichelleW)
 - [Diedra Rater](https://github.com/dierat)
+
+![the team presenting the finished product at Rackspace](http://i132.photobucket.com/albums/q17/dierat/CInsSAQVEAAstKb.jpg)
 
 
 # Stretch features
