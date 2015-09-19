@@ -9,6 +9,14 @@ See it online! http://travel-recipes.meteor.com/
 # The Team
 
 ![team photo](http://i132.photobucket.com/albums/q17/dierat/CI_7O-DWsAAN8yz.jpg)
+*the team after winning Best Use of MongoDB at neohack15*
+(from left to right)
+- [Kristin Mayer](https://github.com/coldzonemt)
+- [Delphine Foo-Matkin](https://github.com/delphinefoo)
+- [Ramya Thulasingam](https://github.com/ramyathulasingam)
+- [Danielle Gellis](https://github.com/danisyellis)
+- [Michelle Wu](https://github.com/MichelleW)
+- [Diedra Rater](https://github.com/dierat)
 
 
 # Stretch features
