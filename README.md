@@ -10,7 +10,7 @@ See it online! http://travel-recipes.meteor.com/
 
 ![team photo](http://i132.photobucket.com/albums/q17/dierat/CI_7O-DWsAAN8yz.jpg)
 *the team after winning Best Use of MongoDB at neohack15*
-(from left to right)
+<p>(from left to right)</p>
 - [Kristin Mayer](https://github.com/coldzonemt)
 - [Delphine Foo-Matkin](https://github.com/delphinefoo)
 - [Ramya Thulasingam](https://github.com/ramyathulasingam)
