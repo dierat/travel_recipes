@@ -30,3 +30,5 @@ See it online! http://travel-recipes.meteor.com/
 - notifications and alerts
 - ability to follow users to be alerted of their new recipes as soon as they're posted
 - notifications for searches so users can see new recipes that fit their personal requirements right away
+
+![team selfie](http://i132.photobucket.com/albums/q17/dierat/neohack15_1.jpg)
