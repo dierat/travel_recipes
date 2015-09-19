@@ -1,6 +1,6 @@
 # Travel Recipes
 
-An app for creating and discovering travel plans.
+An app for creating and discovering travel plans, built with JavaScript, Meteor, and MongoDB.
 
 See it online! http://travel-recipes.meteor.com/
 
