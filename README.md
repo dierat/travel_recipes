@@ -32,4 +32,5 @@ See it online! http://travel-recipes.meteor.com/
 - notifications for searches so users can see new recipes that fit their personal requirements right away
 
 ![team selfie](http://i132.photobucket.com/albums/q17/dierat/software%20dev%20portfolio%20images/neohack15_1.jpg)
-<p>team selfie, with mentor [Rahul Choudhury](https://github.com/Primigenus)</p>
+<br>
+team selfie, with mentor [Rahul Choudhury](https://github.com/Primigenus)
