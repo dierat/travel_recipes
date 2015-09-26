@@ -4,12 +4,12 @@ An app for creating and discovering travel plans, built with JavaScript, Meteor,
 
 See it online! http://travel-recipes.meteor.com/
 
-![Travel Recipes home page](http://i132.photobucket.com/albums/q17/dierat/Screen%20Shot%202015-09-18%20at%206.04.13%20PM.png)
+![Travel Recipes home page](http://i132.photobucket.com/albums/q17/dierat/software%20dev%20portfolio%20images/Screen%20Shot%202015-09-18%20at%206.04.00%20PM.png)
 
 
 # The Team
 
-![team photo after winning best use of MongoDB](http://i132.photobucket.com/albums/q17/dierat/CI_7O-DWsAAN8yz.jpg)
+![team photo after winning best use of MongoDB](http://i132.photobucket.com/albums/q17/dierat/software%20dev%20portfolio%20images/CI_7O-DWsAAN8yz.jpg)
 *the team after winning Best Use of MongoDB at neoHack15*
 - [Kristin Mayer](https://github.com/coldzonemt)
 - [Delphine Foo-Matkin](https://github.com/delphinefoo)
@@ -18,7 +18,7 @@ See it online! http://travel-recipes.meteor.com/
 - [Michelle Wu](https://github.com/MichelleW)
 - [Diedra Rater](https://github.com/dierat)
 
-![the team presenting the finished product at Rackspace](http://i132.photobucket.com/albums/q17/dierat/CInsSAQVEAAstKb.jpg)
+![the team presenting the finished product at Rackspace](http://i132.photobucket.com/albums/q17/dierat/software%20dev%20portfolio%20images/CInsSAQVEAAstKb.jpg)
 
 
 # Stretch features
@@ -31,4 +31,5 @@ See it online! http://travel-recipes.meteor.com/
 - ability to follow users to be alerted of their new recipes as soon as they're posted
 - notifications for searches so users can see new recipes that fit their personal requirements right away
 
-![team selfie](http://i132.photobucket.com/albums/q17/dierat/neohack15_1.jpg)
+![team selfie](http://i132.photobucket.com/albums/q17/dierat/software%20dev%20portfolio%20images/neohack15_1.jpg)
+*team selfie, with mentor [Rahul Choudhury](https://github.com/Primigenus)*
