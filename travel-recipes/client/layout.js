@@ -1,7 +1,3 @@
-if (Meteor.isClient) {
-	Template.layout.helpers({
-	   username: function(){
-	     return Meteor.user().username;
-	   }
-	 });
-}
+Template.layout.helpers({
+  username: () => Meteor.user().username
+});
