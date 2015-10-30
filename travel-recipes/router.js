@@ -9,7 +9,7 @@ Router.route("/recipes/add", {
 });
 
 Router.route("/recipes/:_id", {
-  name: "addIngredientToRecipe",
+  name: "recipe",
   data: function(){
     var recipe = Recipes.findOne(this.params._id);
     return recipe;

@@ -1,4 +1,4 @@
-Template.addIngredientToRecipe.helpers({
+Template.recipe.helpers({
   isUserAndCreator: function(){
     return Meteor.user() ? Meteor.user().username === this.userName : false;
   }
