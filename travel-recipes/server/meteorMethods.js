@@ -1,11 +1,10 @@
 Meteor.methods({
-  updateRecipes: function() {
+  updateRecipes: () => {
     Recipes.update(
       {},
       {$set: {ingredients: _.pluck(Ingredients.find().fetch(), "_id")}},
-      {multi: true});
+      {multi: true}
+    );
   },
-  deleteRecipe: function(id){
-    Recipes.remove(id);
-  }
+  deleteRecipe: (id) => Recipes.remove(id)
 });
