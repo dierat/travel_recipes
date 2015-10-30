@@ -6,7 +6,7 @@ Router.route("/", {name: "mainPage"});
 
 Router.route("/recipes/add", {
   name: "recipeForm"
-})
+});
 
 Router.route("/recipes/:_id", {
   name: "addIngredientToRecipe",
@@ -14,5 +14,4 @@ Router.route("/recipes/:_id", {
     var recipe = Recipes.findOne(this.params._id);
     return recipe;
   }
-})
-
+});
