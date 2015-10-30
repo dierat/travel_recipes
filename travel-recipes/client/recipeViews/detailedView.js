@@ -1,3 +1,8 @@
+Template.addIngredientToRecipe.helpers({
+  isUserAndCreator: function(){
+    return Meteor.user() ? Meteor.user().username === this.userName : false;
+  }
+});
 Template.ingredient.helpers({
   currentIngredient: function(){
     const ingredientID = Template.instance().data;
