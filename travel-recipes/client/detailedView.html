@@ -8,26 +8,25 @@
 	      <p>{{summary}}</p>
 	    </div>
 		<h3>Ingredients</h3>
-			<ul id="ingredients_list">
-		  	{{#each ingredients}}
-		    	{{> ingredient}}
-		  	{{/each}}
-		  	</ul>
+		<ul id="ingredients_list">
+	  	{{#each ingredients}}
+	    	{{> ingredient}}
+	  	{{/each}}
+	  </ul>
 	</div>
 </template>
 
 <template name="ingredient">
   {{#with currentIngredient}}
     <details>
-    <summary id="drop-down-button">{{name}}: {{type}}</summary>
-    <ul class="additional-details">
-      <li class="ingredientPic"><img src="{{ingredientPic}}"></li>
-      <li>Duration: {{duration}}</li>
-      <li>Cost: {{cost}}</li>
-      <li>Address: {{address}}</li>
-      <li>Website: {{website}}</li>
-    </ul>
+	    <summary id="drop-down-button">{{name}}: {{type}}</summary>
+	    <ul class="additional-details">
+	      <li class="ingredientPic"><img src="{{ingredientPic}}"></li>
+	      <li>Duration: {{duration}}</li>
+	      <li>Cost: {{cost}}</li>
+	      <li>Address: {{address}}</li>
+	      <li>Website: {{website}}</li>
+	    </ul>
     </details>
   {{/with}}
 </template>
-
