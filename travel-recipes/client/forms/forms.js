@@ -25,7 +25,7 @@ Template.ingredientForm.events({
 
 		const recipeId = Router.current().params._id;
 		const selected = document.getElementById("ingredientType");
-		
+
 		const ingredientId = Ingredients.insert({
 			type: selected.options[selected.selectedIndex].value,
 			name: $("input[name='name']").val(),
@@ -33,7 +33,8 @@ Template.ingredientForm.events({
 			duration: $("input[name='duration']").val(),
 			address: $("input[name='address']").val(),
 			ingredientPic: $("input[name='ingredientPic']").val(),
-			website: $("input[name='website']").val()
+			website: $("input[name='website']").val(),
+			notes: $("input[name='notes']").val()
 		});
 
 		$("input[name='name']").val('');
@@ -42,6 +43,7 @@ Template.ingredientForm.events({
 		$("input[name='address']").val('');
 		$("input[name='ingredientPic']").val('');
 		$("input[name='website']").val('');
+		$("input[name='notes']").val('');
 
 		Recipes.update(
 			{_id: recipeId},
