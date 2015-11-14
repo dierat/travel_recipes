@@ -29,6 +29,10 @@ body {
 	column-fill: auto;
 }
 
+/******************************
+	Recipe list
+******************************/
+
 .pin {
 	display: inline-block;
 	background: #FEFEFE;
@@ -42,7 +46,7 @@ body {
 	padding-bottom: 5px;
 	background: -webkit-linear-gradient(45deg, #FFF, #F9F9F9);
 	opacity: 1;
-	
+
 	-webkit-transition: all .2s ease;
 	-moz-transition: all .2s ease;
 	-o-transition: all .2s ease;
@@ -81,4 +85,48 @@ body {
 		-moz-column-count: 5;
 		column-count: 5;
 	}
+}
+
+
+/******************************
+	Detailed view
+******************************/
+
+.additional-details{
+  display: none;
+}
+.additional-details img{
+	max-width: 400px;
+}
+#recipe-info{
+	padding-top:20px;
+}
+
+#recipe-info p{
+	font-size: 16px;
+	margin-top: 5px;
+}
+
+#recipe-info h2{
+	margin-bottom: 0;
+}
+#recipe-info h3{
+	margin: 5px 0 0 0;
+}
+.main-img{
+	max-width: 600px;
+}
+
+li.ingredientPic{
+	list-style: none;
+}
+
+ul#ingredients_list{
+	font-size: 20px;
+
+}
+
+ul#ingredients_list li{
+	list-style: none;
+
 }
