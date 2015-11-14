@@ -2,13 +2,13 @@
 	<div id="wrapper">
 	  <div id="column">
 	  	{{#each recipes}}
-		  	{{> recipe}}
+		  	{{> recipeSummary}}
 	  	{{/each}}
 	 	</div>
 	</div>
 </template>
 
-<template name="recipe">
+<template name="recipeSummary">
   <a href="/recipes/{{_id}}">
 	  <div class="pin">
 		  <p class="name">{{name}} </p>
