@@ -19,7 +19,20 @@ Template.recipeForm.events({
 
 
 
+Template.ingredientForm.onRendered(() => {
+	Session.setDefault('ingredientType', 'lodging');
+});
+
+Template.ingredientForm.helpers({
+	isTransportation: () => Session.equals('ingredientType', 'transportation')
+});
+
 Template.ingredientForm.events({
+	"change #ingredientType": () => {
+		const ingredientType = $('#ingredientType').val();
+		Session.set('ingredientType', ingredientType);
+	},
+
 	"click #submitIngredient": function(event) {
 		event.preventDefault();
 
