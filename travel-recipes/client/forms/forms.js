@@ -21,7 +21,7 @@ Template.recipeForm.events({
 
 
 Template.ingredientForm.onRendered(() => {
-	Session.setDefault('ingredientType', 'lodging');
+	Session.setDefault('ingredientType', 'transportation');
 });
 
 Template.ingredientForm.helpers({
