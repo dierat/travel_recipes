@@ -5,6 +5,7 @@ Template.recipeForm.events({
 		const recipeId = Recipes.insert({
 			name: $("input[name='name']").val(),
 			location: $("input[name='location']").val(),
+			startTime: $("startTime").val(),
 			duration: $("input[name='duration']").val(),
 			mainImage: $("input[name='mainImage']").val(),
 			summary: $("textarea[name='summary']").val(),
