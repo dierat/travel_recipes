@@ -60,9 +60,23 @@
 				<input type="number" min="0" name="duration" class="form-control" placeholder="ex: 18"/>
 			</div>
 			<div class="form-group">
-				<label for="address">Where is it?</label>
+				<label for="address">
+					{{#if isTransportation}}
+						Where does it start?
+					{{else}}
+						Where is it?
+					{{/if}}
+				</label>
 				<input type="text" name="address" class="form-control" placeholder="ex: Paris, France"/>
 			</div>
+			{{#if isTransportation}}
+				<div class="form-group">
+					<label for="endAddress">
+						Where does it end?
+					</label>
+					<input type="text" name="endAddress" class="form-control" placeholder="ex: Spain"/>
+				</div>
+			{{/if}}
 			<div class="form-group">
 				<label for="ingredientPic">Add the url of an image</label>
 				<input type="url" name="ingredientPic" class="form-control" placeholder="ex: http://www.hot-air-balloon.jpeg"/>

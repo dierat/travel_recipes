@@ -46,6 +46,7 @@ Template.ingredientForm.events({
 			cost: $("input[name='cost']").val(),
 			duration: $("input[name='duration']").val(),
 			address: $("input[name='address']").val(),
+			endAddress: $("input[name='endAddress']").val(),
 			ingredientPic: $("input[name='ingredientPic']").val(),
 			website: $("input[name='website']").val(),
 			notes: $("input[name='notes']").val()
@@ -55,6 +56,7 @@ Template.ingredientForm.events({
 		$("input[name='cost']").val('');
 		$("input[name='duration']").val('');
 		$("input[name='address']").val('');
+		$("input[name='endAddress']").val('');
 		$("input[name='ingredientPic']").val('');
 		$("input[name='website']").val('');
 		$("input[name='notes']").val('');
