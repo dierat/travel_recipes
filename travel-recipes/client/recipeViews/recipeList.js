@@ -1,4 +1,4 @@
-Template.travelRecipes.helpers({
+Template.mainPage.helpers({
   recipes: () => Recipes.find({}, {sort: {dateCreated: -1}})
 });
 
