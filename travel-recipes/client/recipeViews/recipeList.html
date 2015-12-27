@@ -9,22 +9,21 @@
 	</div>
 
 	<div id="wrapper">
-	  <div id="column">
+	  <!-- <div id="column"> -->
 	  	{{#each recipes}}
 		  	{{> recipeSummary}}
 	  	{{/each}}
-	 	</div>
+	 	<!-- </div> -->
 	</div>
 </template>
 
 <template name="recipeSummary">
   <a href="/recipes/{{_id}}">
-	  <div class="pin">
+	  <div class="pin" style="background-image: url({{recipeImage}})">
 		  <p class="name">{{name}} </p>
 		  <p>{{duration}}</p>
 		  <p>{{location}}</p>
-		  <img src={{recipeImage}} class="mainImage" />
-		  <p class="summary">{{summary}}</p>
+		  <!-- <p class="summary">{{summary}}</p> -->
 		  <p class="username">Created by:</p>
 		  <p><a>{{userName}}</a> {{dateCreatedFromNow}}</p>
 	  </div>
