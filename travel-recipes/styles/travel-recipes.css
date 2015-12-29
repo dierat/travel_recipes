@@ -45,7 +45,7 @@ h3 {
 	font-family: 'Philosopher', sans-serif;
 	font-weight: 400;
 	font-size: 32px;
-	background: -webkit-linear-gradient(#eee, #333);
+	background: -webkit-linear-gradient(#007FBE, #26B1F6);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
