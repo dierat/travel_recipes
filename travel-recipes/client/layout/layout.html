@@ -5,11 +5,12 @@
 
 <template name="layout">
 	<header>
-    <img src="travelrecipes_logo_whitebg.png" class="logo">
+    <div>
+      <img src="travelrecipes_logo_whitebg.png" class="logo">
+      <a href="/"><span class="site-name">Travel Recipes</span></a>
+    </div>
 
-    <a href="/"><span class="site-name">Travel Recipes</span></a>
-
-    {{#if smallScreen}}
+    {{#if rwindow.innerWidth 'lte' 700}}
       <div id="hamburger"></div>
     {{else}}
       {{#if currentUser}}
