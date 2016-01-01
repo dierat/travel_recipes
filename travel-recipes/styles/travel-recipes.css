@@ -190,10 +190,6 @@ h1 {
 	max-width: 400px;
 }
 
-#recipe-info {
-	padding-top: 120px;
-}
-
 #recipe-info p {
 	font-size: 16px;
 	margin-top: 5px;
@@ -221,4 +217,9 @@ ul#ingredients_list {
 
 ul#ingredients_list li {
 	list-style: none;
+}
+
+
+.content {
+	padding: 120px 0 50px 0;
 }

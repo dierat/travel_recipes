@@ -1,29 +1,38 @@
 <template name="recipeForm">
 	<div class="container">
-		<form>
-			<div class="form-group">
-				<label for="name">Name your recipe</label>
-				<input type="text" name="name" class="form-control" placeholder="ex: Around the World in 80 Days"/>
-			</div>
-			<div class="form-group">
-				<label for="location">Enter the city, country, or region of this trip</label>
-				<input type="text" name="location" class="form-control" placeholder="ex: Earth"/>
-			</div>
-			<div class="form-group">
-				<label for="duration">How many days will your trip last?</label>
-				<input type="number" min="0" name="duration" class="form-control" placeholder="ex: 80"/>days
-			</div>
-			<div class="form-group">
-				<label for="mainImage">Add the url of an image that represents your trip</label>
-				<input type="url" name="mainImage" class="form-control" placeholder="ex: http://www.around-the-world.jpeg"/>
-			</div>
-			<div class="form-group">
-				<label for="summary">Add a summary of your trip here</label>
-				<textarea name="summary" class="form-control" placeholder="ex: A trip around the world in 80 days! All the way around! In 80 days! For real!!!1"></textarea>
-			</div>
-		</form>
+		<div class="banner">
+			<img class="banner_image" style="background-image: url('/traveling/womanphotographingstupa.jpg')">
+		</div>
+		<div class="title">
+			<h1>Cook up your<br>dream trip</h1>
+		</div>
 
-		<input type="button" class="btn btn-default" id="submitRecipe" value="Submit"/>
+		<div class="content">
+			<form>
+				<div class="form-group">
+					<label for="name">Name your recipe</label>
+					<input type="text" name="name" class="form-control" placeholder="ex: Around the World in 80 Days"/>
+				</div>
+				<div class="form-group">
+					<label for="location">Enter the city, country, or region of this trip</label>
+					<input type="text" name="location" class="form-control" placeholder="ex: Earth"/>
+				</div>
+				<div class="form-group">
+					<label for="duration">How many days will your trip last?</label>
+					<input type="number" min="0" name="duration" class="form-control" placeholder="ex: 80"/>days
+				</div>
+				<div class="form-group">
+					<label for="mainImage">Add the url of an image that represents your trip</label>
+					<input type="url" name="mainImage" class="form-control" placeholder="ex: http://www.around-the-world.jpeg"/>
+				</div>
+				<div class="form-group">
+					<label for="summary">Add a summary of your trip here</label>
+					<textarea name="summary" class="form-control" placeholder="ex: A trip around the world in 80 days! All the way around! In 80 days! For real!!!1"></textarea>
+				</div>
+			</form>
+
+			<input type="button" class="btn btn-default" id="submitRecipe" value="Submit"/>
+		</div>
 	</div>
 </template>
 
