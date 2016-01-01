@@ -12,6 +12,6 @@ Template.recipeSummary.helpers({
   },
 
   recipeImage: function() {
-    return this.mainImage || "tripicon.png";
+    return this.mainImage || "/tripicon.png";
   }
 });
