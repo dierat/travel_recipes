@@ -4,26 +4,23 @@
 </head>
 
 <template name="layout">
-	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container col-lg-8 col-lg-offset-1">
-      <div class="navbar-header">
-          <h3>
-            <img src="travelrecipes_logo_whitebg.png" class="logo">
-            <a href="/"><span class="site-name">Travel Recipes</span></a>
-          {{#if currentUser}}
-				    <a class="btn btn-info" href="/recipes/add" role="button">
-              <span class="glyphicon glyphicon-plus add-recipe" title="Add Receipe"></span>
-               Create new recipe
-            </a>
-          {{/if}}
-				  </h3>
-      </div>
+	<header>
+    <img src="travelrecipes_logo_whitebg.png" class="logo">
 
-      <ul class="nav navbar-nav navbar-right">
-          <li>{{> loginButtons align="right"}}</li>
-      </ul>
-    </div>
-	</nav>
+    <a href="/"><span class="site-name">Travel Recipes</span></a>
+
+    {{#if smallScreen}}
+      <div id="hamburger"></div>
+    {{else}}
+      {{#if currentUser}}
+  	    <a class="button headerButton" href="/recipes/add" role="button">
+           New recipe
+        </a>
+      {{/if}}
+
+      {{> loginButtons align="right"}}
+    {{/if}}
+  </header>
 
   {{> yield}}
 </template>
