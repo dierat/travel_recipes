@@ -1,3 +1,7 @@
+/******************************
+	General
+******************************/
+
 body {
 	background-color: white;
 	margin: 0;
@@ -9,12 +13,51 @@ a {
 	color: #00A3F4;
 }
 
+a:hover {
+	color: #44C1FF;
+}
+
 h3 {
 	color: #5e5e5e;
 }
 
 .container {
 	max-width: 700px;
+}
+
+.content {
+	padding: 120px 0 50px 0;
+}
+
+label {
+	font-family: 'Philosopher', sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+}
+
+input:not(.button),
+textarea:not(.button) {
+	border: none;
+	border-bottom: 1px solid #44C1FF;
+	width: 100%;
+	margin: 5px 0 25px 0;
+}
+
+.button {
+	color: white;
+	font-family: 'Philosopher', sans-serif;
+	font-size: 24px;
+	background-color: #00A3F4;
+	padding: 8px 16px;
+	display: block;
+	margin: 0 auto;
+	border: none;
+	border-radius: 3px;
+	letter-spacing: 0.035em
+}
+
+.button:hover {
+	background-color: #44C1FF;
 }
 
 
@@ -45,7 +88,7 @@ h3 {
 	font-family: 'Philosopher', sans-serif;
 	font-weight: 400;
 	font-size: 32px;
-	background: -webkit-linear-gradient(#007FBE, #26B1F6);
+	background: -webkit-linear-gradient(#007FBE, #44C1FF);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -217,9 +260,4 @@ ul#ingredients_list {
 
 ul#ingredients_list li {
 	list-style: none;
-}
-
-
-.content {
-	padding: 120px 0 50px 0;
 }

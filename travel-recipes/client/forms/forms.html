@@ -9,29 +9,31 @@
 
 		<div class="content">
 			<form>
-				<div class="form-group">
+				<p>
 					<label for="name">Name your recipe</label>
-					<input type="text" name="name" class="form-control" placeholder="ex: Around the World in 80 Days"/>
-				</div>
-				<div class="form-group">
+					<input type="text" name="name" placeholder="ex: Around the World in 80 Days"/>
+				</p>
+				<p>
 					<label for="location">Enter the city, country, or region of this trip</label>
-					<input type="text" name="location" class="form-control" placeholder="ex: Earth"/>
-				</div>
-				<div class="form-group">
+					<input type="text" name="location" placeholder="ex: Earth"/>
+				</p>
+				<p>
 					<label for="duration">How many days will your trip last?</label>
-					<input type="number" min="0" name="duration" class="form-control" placeholder="ex: 80"/>days
-				</div>
-				<div class="form-group">
+					<input type="number" min="0" name="duration" placeholder="ex: 80"/>
+				</p>
+				<p>
 					<label for="mainImage">Add the url of an image that represents your trip</label>
-					<input type="url" name="mainImage" class="form-control" placeholder="ex: http://www.around-the-world.jpeg"/>
-				</div>
-				<div class="form-group">
+					<input type="url" name="mainImage" placeholder="ex: http://www.around-the-world.jpeg"/>
+				</p>
+				<p>
 					<label for="summary">Add a summary of your trip here</label>
-					<textarea name="summary" class="form-control" placeholder="ex: A trip around the world in 80 days! All the way around! In 80 days! For real!!!1"></textarea>
-				</div>
+					<p>
+						<textarea name="summary" placeholder="ex: A trip around the world in 80 days! All the way around! In 80 days! For real!!!1"></textarea>
+					</p>
+				</p>
 			</form>
 
-			<input type="button" class="btn btn-default" id="submitRecipe" value="Submit"/>
+			<input class="button" type="button" id="submitRecipe" value="Submit"/>
 		</div>
 	</div>
 </template>
