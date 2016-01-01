@@ -3,13 +3,11 @@
 		<h1>{{name}}</h1>
 	</div>
 
-	<div id="wrapper">
-		{{> recipeItem}}
+	{{> recipeItem}}
 
-		{{#if isUserAndCreator}}
-			{{> ingredientForm}}
-		{{/if}}
-	</div>
+	{{#if isUserAndCreator}}
+		{{> ingredientForm}}
+	{{/if}}
 </template>
 
 
