@@ -1,9 +1,20 @@
 <template name="recipe">
-	{{> recipeItem}}
+	<div class="container">
+		<div class="banner">
+			<img class="banner_image" style="background-image: url('{{mainImage}}')">
+		</div>
+		<div class="title">
+			<h1>{{name}}</h1>
+		</div>
+	</div>
 
-	{{#if isUserAndCreator}}
-		{{> ingredientForm}}
-	{{/if}}
+	<div id="wrapper">
+		{{> recipeItem}}
+
+		{{#if isUserAndCreator}}
+			{{> ingredientForm}}
+		{{/if}}
+	</div>
 </template>
 
 
@@ -11,8 +22,6 @@
 <template name="recipeItem">
 	<div class="container">
     <div id="recipe-info">
-      <img src="{{mainImage}}" class="main-img img-rounded">
-      <h2>Trip Name: {{name}}</h2>
       <h3>Location: {{location}}</h3>
       <h3>Duration: {{duration}}</h3>
       <p>{{summary}}</p>

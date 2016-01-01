@@ -80,7 +80,6 @@ ul.nav.navbar-nav.navbar-right {
 	width: 100%;
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-image: url("/traveling/womanphotographingstupa.jpg");
 	z-index: -1;
 }
 
@@ -192,7 +191,7 @@ h1 {
 }
 
 #recipe-info {
-	padding-top:20px;
+	padding-top: 120px;
 }
 
 #recipe-info p {
