@@ -15,6 +15,10 @@ not curly sans text: font-family: 'Tenor Sans', sans-serif;
 	General
 ******************************/
 
+html {
+	margin: 0;
+}
+
 body {
 	background-color: white;
 	margin: 0;
@@ -37,11 +41,7 @@ h3 {
 
 .container {
 	max-width: 700px;
-	margin-top: 70px;
-}
-
-.content {
-	padding: 120px 0 50px 0;
+	margin: 20px auto 50px auto;
 }
 
 label {
@@ -158,27 +158,35 @@ header {
 	Splash page
 ******************************/
 
-.banner_image {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	height: 435px;
+h1 {
+	font-size: 72px;
+}
+
+.banner {
+	margin-top: 70px;
+	padding-top: 75px;
+	height: 300px;
 	width: 100%;
 	background-size: cover;
 	background-repeat: no-repeat;
-	z-index: -1;
 }
 
-h1 {
-	font-size: 80px;
-}
-
-.title {
+.banner h1 {
 	margin:auto;
-	margin-top: 100px;
 	color: white;
 	font-family: 'Pinyon Script', cursive;
 	text-align: center;
+}
+
+@media screen and (max-width: 700px){
+	.banner {
+		padding-top: 50px;
+		height: 200px;
+	}
+
+	.banner h1 {
+		font-size: 44px;
+	}
 }
 
 .nav_ul li {

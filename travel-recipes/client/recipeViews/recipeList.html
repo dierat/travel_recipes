@@ -1,18 +1,13 @@
 <template name="mainPage">
-	<div class="container">
-		<div class="banner">
-			<img class="banner_image" style="background-image: url('/traveling/womanphotographingstupa.jpg')">
-		</div>
-		<div class="title">
-			<h1>Discover the world's most delicious vacations</h1>
-		</div>
+	<div
+		class="banner"
+		style="background-image: url('/traveling/womanphotographingstupa.jpg')">
+		<h1>Discover the world's most delicious vacations</h1>
 	</div>
 
-	<div id="wrapper">
-  	{{#each recipes}}
-	  	{{> recipeSummary}}
-  	{{/each}}
-	</div>
+	{{#each recipes}}
+  	{{> recipeSummary}}
+	{{/each}}
 </template>
 
 <template name="recipeSummary">
