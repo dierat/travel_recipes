@@ -7,7 +7,7 @@ Template.mainPage.helpers({
 });
 
 Template.recipeSummary.helpers({
-  dateCreatedFromNow: function(){
+  dateCreatedFromNow() {
     return moment(this.dateCreated).fromNow();
   },
 

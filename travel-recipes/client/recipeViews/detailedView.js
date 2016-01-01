@@ -3,12 +3,12 @@ Template.recipe.onRendered(()=> {
 });
 
 Template.recipe.helpers({
-  isUserAndCreator: function(){
+  isUserAndCreator() {
     return Meteor.user() ? Meteor.user().username === this.userName : false;
   }
 });
 Template.ingredient.helpers({
-  currentIngredient: function(){
+  currentIngredient() {
     const ingredientID = Template.instance().data;
     const ing = Ingredients.findOne({_id: ingredientID});
     return ing;
@@ -16,7 +16,7 @@ Template.ingredient.helpers({
 });
 //add button jQuery functionality in template name Ingredient
 Template.ingredient.events({
-  "click #drop-down-button": function(){
+  "click #drop-down-button"() {
     $(Template.instance().find(".additional-details")).slideToggle();
   }
 });

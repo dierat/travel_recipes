@@ -10,7 +10,7 @@ Router.route("/recipes/add", {
 
 Router.route("/recipes/:_id", {
   name: "recipe",
-  data: function(){
+  data() {
     var recipe = Recipes.findOne(this.params._id);
     return recipe;
   }
