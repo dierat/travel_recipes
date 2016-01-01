@@ -1,3 +1,7 @@
+Template.recipe.onRendered(()=> {
+  window.scrollTo(0, 0);
+});
+
 Template.recipe.helpers({
   isUserAndCreator: function(){
     return Meteor.user() ? Meteor.user().username === this.userName : false;
