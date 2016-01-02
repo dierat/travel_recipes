@@ -29,6 +29,7 @@ ecmascript-runtime@0.2.6
 ejson@1.0.7
 email@1.0.8
 fastclick@1.0.7
+fourseven:scss@3.4.1
 gadicohen:reactive-window@1.0.6
 geojson-utils@1.0.4
 hot-code-push@1.0.0
