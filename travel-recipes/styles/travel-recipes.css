@@ -25,7 +25,10 @@ body {
 	font-family: 'Tenor Sans', sans-serif;
 }
 
-a {
+a,
+a:visited,
+a:active,
+a:focus {
 	color: #00A3F4;
 	text-decoration: none;
 }
@@ -61,7 +64,7 @@ textarea:not(.button) {
 .button {
 	color: white;
 	font-family: 'Philosopher', sans-serif;
-	font-size: 24px;
+	font-size: 18px;
 	background-color: #00A3F4;
 	padding: 8px 16px;
 	display: block;
@@ -73,6 +76,10 @@ textarea:not(.button) {
 
 .button:hover {
 	background-color: #44C1FF;
+}
+
+.button {
+	color: white !important;
 }
 
 
