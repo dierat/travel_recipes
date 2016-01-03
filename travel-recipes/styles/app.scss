@@ -6,6 +6,9 @@ $light-blue: #44C1FF;
 $medium-blue: #00A3F4;
 $dark-blue: #007FBE;
 
+$light-grey: #737386;
+$dark-grey: #1D1C36;
+
 
 /******************************
 	Fonts
@@ -26,8 +29,14 @@ html {
 
 body {
 	background-color: white;
+  color: $dark-grey;
 	margin: 0;
 	font-family: $not-curly-font;
+}
+
+.container {
+	max-width: 700px;
+	margin: 20px auto 50px auto;
 }
 
 a,
@@ -44,47 +53,7 @@ a:hover {
 }
 
 h3 {
-	color: #5e5e5e;
-}
-
-.container {
-	max-width: 700px;
-	margin: 20px auto 50px auto;
-}
-
-label {
-	font-family: $slightly-curly-font;
-	font-size: 20px;
-	font-weight: 400;
-}
-
-input:not(.button),
-textarea:not(.button) {
-	border: none;
-	border-bottom: 1px solid $light-blue;
-	width: 100%;
-	margin: 5px 0 25px 0;
-}
-
-.button {
-	color: white;
-	font-family: $slightly-curly-font;
-	font-size: 18px;
-	background-color: $medium-blue;
-	padding: 8px 16px;
-	display: block;
-	margin: 0 auto;
-	border: none;
-	border-radius: 3px;
-	letter-spacing: 0.035em
-}
-
-.button:hover {
-	background-color: $light-blue;
-}
-
-.button {
-	color: white !important;
+	color: $light-grey;
 }
 
 
@@ -107,15 +76,6 @@ header {
 	display: flex;
 
 	justify-content: space-between;
-}
-
-#wrapper h3, #wrapper h4, #wrapper h5 {
-	color: #5f5f5f;
-}
-
-#wrapper {
-	width: 100%;
-	margin-top: 78px;
 }
 
 .site-name {
@@ -162,14 +122,15 @@ header {
 
 
 /******************************
-	Splash page
+	Banners
 ******************************/
 
-h1 {
-	font-size: 72px;
-}
-
 .banner {
+	color: white;
+	font-size: 72px;
+	font-family: $very-curly-font;
+	text-align: center;
+
 	margin-top: 70px;
 	padding: 75px 20px 0 20px;
 	height: 300px;
@@ -178,45 +139,12 @@ h1 {
 	background-repeat: no-repeat;
 }
 
-.banner h1 {
-	margin:auto;
-	color: white;
-	font-family: $very-curly-font;
-	text-align: center;
-}
-
 @media screen and (max-width: 700px){
 	.banner {
+		font-size: 44px;
 		padding: 50px 10px 0 10px;
 		height: 200px;
 	}
-
-	.banner h1 {
-		font-size: 44px;
-	}
-}
-
-.nav_ul li {
-	float: right;
-	padding-right: 50px;
-	margin-top: 20px;
-}
-
-.nav_ul {
-	display: inline;
-	list-style-type: none;
-  text-transform: uppercase;
-  font-size: 1.5em;
-  font-weight: bold;
-  padding: 0 20px;
-  color: white;
-  font-family: avenir, sans-serif;
-}
-
-#lower_half {
-	margin-top: 170px;
-	font-size: 2em;
-	text-align: center;
 }
 
 
@@ -224,7 +152,7 @@ h1 {
 	Recipe list
 ******************************/
 
-.pin {
+.thumb {
 	/* width for mobile */
 	width: 100%;
 	height: 300px;
@@ -242,38 +170,37 @@ h1 {
 	transition: all .2s ease;
 }
 
-.pin p {
-	/*font: 16px/24px Arial, sans-serif;*/
+.thumb p {
 	color: white;
 	margin: 0;
 }
 
-.pin p.name {
+.thumb p.name {
 	font-family: $slightly-curly-font;
 	font-weight: 400;
 	font-size: 20px;
 }
 
 @media screen and (min-width: 500px) {
-	.pin {
+	.thumb {
 		width: 50%;
 	}
 }
 
 @media screen and (min-width: 1000px) {
-	.pin {
+	.thumb {
 		width: 33.33%;
 	}
 }
 
 @media screen and (min-width: 1500px) {
-	.pin {
+	.thumb {
 		width: 25%;
 	}
 }
 
 @media screen and (min-width: 2000px) {
-	.pin {
+	.thumb {
 		width: 20%;
 	}
 }
@@ -318,4 +245,40 @@ ul#ingredients_list {
 
 ul#ingredients_list li {
 	list-style: none;
+}
+
+
+/******************************
+	Forms
+******************************/
+
+label {
+	font-family: $slightly-curly-font;
+	font-size: 20px;
+	font-weight: 400;
+}
+
+input:not(.button),
+textarea:not(.button) {
+	border: none;
+	border-bottom: 1px solid $light-blue;
+	width: 100%;
+	margin: 5px 0 25px 0;
+}
+
+.button {
+	color: white !important;
+	font-family: $slightly-curly-font;
+	font-size: 18px;
+	background-color: $medium-blue;
+	padding: 8px 16px;
+	display: block;
+	margin: 0 auto;
+	border: none;
+	border-radius: 3px;
+	letter-spacing: 0.035em
+}
+
+.button:hover {
+	background-color: $light-blue;
 }
