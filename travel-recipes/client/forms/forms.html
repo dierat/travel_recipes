@@ -53,36 +53,36 @@
 		</p>
 		<p>
 			<label for="name">Give it a name</label>
-			<input type="text" name="name" placeholder="ex: hot air balloon"/>
+			<input type="text" name="name" placeholder="ex: hot air balloon" required/>
 		</p>
 		<p>
 			<label for="cost">How many dollars do you think it will cost?</label>
-			<input type="number" min="0" name="cost" placeholder="ex: 46.75"/>
+			<input type="number" min="0" name="cost" placeholder="ex: 46.75" required/>
 		</p>
 		<p>
 			<label for="startTime">When will it begin?</label>
-			<input type="datetime" name="startTime" placeholder="ex: 1:45PM"/>
+			<input type="datetime" name="startTime" placeholder="ex: 1:45PM" required/>
 		</p>
 		<p>
 			<label for="duration">How many hours do you expect it to last?</label>
-			<input type="number" min="0" name="duration" placeholder="ex: 18"/>
+			<input type="number" min="0" name="duration" placeholder="ex: 18" required/>
 		</p>
 		<p>
 			<label for="address">
 				{{#if isTransportation}}
-					Where does it start?
+					Where will it start?
 				{{else}}
 					Where is it?
 				{{/if}}
 			</label>
-			<input type="text" name="address" placeholder="ex: Paris, France"/>
+			<input type="text" name="address" placeholder="ex: Paris, France" required/>
 		</p>
 		{{#if isTransportation}}
 			<p>
 				<label for="endAddress">
-					Where does it end?
+					Where will it end?
 				</label>
-				<input type="text" name="endAddress" placeholder="ex: Spain"/>
+				<input type="text" name="endAddress" placeholder="ex: Spain" required/>
 			</p>
 		{{/if}}
 		<p>
