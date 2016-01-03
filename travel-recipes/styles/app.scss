@@ -1,14 +1,19 @@
 /******************************
-	Constants
-*******************************
+	Colors
+******************************/
 
-light blue: #44C1FF
-medium blue: #00A3F4
-dark blue: #007FBE
+$light-blue: #44C1FF;
+$medium-blue: #00A3F4;
+$dark-blue: #007FBE;
 
-very curly text: font-family: 'Pinyon Script', cursive;
-slightly curly text: font-family: 'Philosopher', sans-serif;
-not curly sans text: font-family: 'Tenor Sans', sans-serif;
+
+/******************************
+	Fonts
+******************************/
+
+$very-curly-font: 'Pinyon Script', cursive;
+$slightly-curly-font: 'Philosopher', sans-serif;
+$not-curly-font: 'Tenor Sans', sans-serif;
 
 
 /******************************
@@ -22,19 +27,19 @@ html {
 body {
 	background-color: white;
 	margin: 0;
-	font-family: 'Tenor Sans', sans-serif;
+	font-family: $not-curly-font;
 }
 
 a,
 a:visited,
 a:active,
 a:focus {
-	color: #00A3F4;
+	color: $medium-blue;
 	text-decoration: none;
 }
 
 a:hover {
-	color: #44C1FF;
+	color: $light-blue;
 	text-decoration: none;
 }
 
@@ -48,7 +53,7 @@ h3 {
 }
 
 label {
-	font-family: 'Philosopher', sans-serif;
+	font-family: $slightly-curly-font;
 	font-size: 20px;
 	font-weight: 400;
 }
@@ -56,16 +61,16 @@ label {
 input:not(.button),
 textarea:not(.button) {
 	border: none;
-	border-bottom: 1px solid #44C1FF;
+	border-bottom: 1px solid $light-blue;
 	width: 100%;
 	margin: 5px 0 25px 0;
 }
 
 .button {
 	color: white;
-	font-family: 'Philosopher', sans-serif;
+	font-family: $slightly-curly-font;
 	font-size: 18px;
-	background-color: #00A3F4;
+	background-color: $medium-blue;
 	padding: 8px 16px;
 	display: block;
 	margin: 0 auto;
@@ -75,7 +80,7 @@ textarea:not(.button) {
 }
 
 .button:hover {
-	background-color: #44C1FF;
+	background-color: $light-blue;
 }
 
 .button {
@@ -114,10 +119,10 @@ header {
 }
 
 .site-name {
-	font-family: 'Philosopher', sans-serif;
+	font-family: $slightly-curly-font;
 	font-weight: 400;
 	font-size: 32px;
-	background: -webkit-linear-gradient(#007FBE, #44C1FF);
+	background: -webkit-linear-gradient($dark-blue, $light-blue);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -140,7 +145,7 @@ header {
 	font-size: 14px;
 	margin-top: 6px;
 	padding: 6px 12px;
-	font-family: 'Tenor Sans', sans-serif;
+	font-family: $not-curly-font;
 }
 
 .headerButton:hover {
@@ -176,7 +181,7 @@ h1 {
 .banner h1 {
 	margin:auto;
 	color: white;
-	font-family: 'Pinyon Script', cursive;
+	font-family: $very-curly-font;
 	text-align: center;
 }
 
@@ -244,7 +249,7 @@ h1 {
 }
 
 .pin p.name {
-	font-family: 'Philosopher', sans-serif;
+	font-family: $slightly-curly-font;
 	font-weight: 400;
 	font-size: 20px;
 }
