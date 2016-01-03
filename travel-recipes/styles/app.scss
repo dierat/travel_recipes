@@ -219,21 +219,13 @@ header {
 	max-width: 400px;
 }
 
-#recipe-info p {
+#recipe-info {
 	font-size: 16px;
-	margin-top: 5px;
+	margin-bottom: 50px;
 }
 
-#recipe-info h2 {
-	margin-bottom: 0;
-}
-
-#recipe-info h3 {
-	margin: 5px 0 0 0;
-}
-
-.main-img {
-	max-width: 600px;
+#ingredients-list {
+	margin-bottom: 50px;
 }
 
 li.ingredientPic {

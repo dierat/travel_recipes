@@ -7,6 +7,7 @@ Template.recipe.helpers({
     return Meteor.user() ? Meteor.user().username === this.userName : false;
   }
 });
+
 Template.ingredient.helpers({
   currentIngredient() {
     const ingredientID = Template.instance().data;
@@ -14,6 +15,7 @@ Template.ingredient.helpers({
     return ing;
   }
 });
+
 //add button jQuery functionality in template name Ingredient
 Template.ingredient.events({
   "click #drop-down-button"() {

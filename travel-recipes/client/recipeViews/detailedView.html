@@ -20,12 +20,16 @@
     <p>{{summary}}</p>
   </div>
 
-	<h3>Ingredients</h3>
-	<ul id="ingredients-list">
-  	{{#each ingredients}}
-    	{{> ingredient}}
-  	{{/each}}
-  </ul>
+	{{#if ingredients}}
+		<div id="ingredients-list">
+			<h3>Ingredients</h3>
+			<ul>
+		  	{{#each ingredients}}
+		    	{{> ingredient}}
+		  	{{/each}}
+		  </ul>
+		</div>
+	{{/if}}
 </template>
 
 
