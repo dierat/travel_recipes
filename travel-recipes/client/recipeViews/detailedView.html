@@ -3,29 +3,29 @@
 		{{name}}
 	</div>
 
-	{{> recipeItem}}
+	<div class="container">
+		{{> recipeItem}}
 
-	{{#if isUserAndCreator}}
-		{{> ingredientForm}}
-	{{/if}}
+		{{#if isUserAndCreator}}
+			{{> ingredientForm}}
+		{{/if}}
+	</div>
 </template>
 
 
 
 <template name="recipeItem">
-	<div class="container content">
-    <div id="recipe-info">
-      <h3>Visit {{location}} for {{duration}}</h3>
-      <p>{{summary}}</p>
-    </div>
+  <div id="recipe-info">
+    <h3>Visit {{location}} for {{duration}}</h3>
+    <p>{{summary}}</p>
+  </div>
 
-		<h3>Ingredients</h3>
-		<ul id="ingredients_list">
-	  	{{#each ingredients}}
-	    	{{> ingredient}}
-	  	{{/each}}
-	  </ul>
-	</div>
+	<h3>Ingredients</h3>
+	<ul id="ingredients-list">
+  	{{#each ingredients}}
+    	{{> ingredient}}
+  	{{/each}}
+  </ul>
 </template>
 
 

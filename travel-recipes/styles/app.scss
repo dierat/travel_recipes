@@ -54,6 +54,7 @@ a:hover {
 
 h3 {
 	color: $light-grey;
+  margin-bottom: 20px;
 }
 
 
@@ -239,11 +240,11 @@ li.ingredientPic {
 	list-style: none;
 }
 
-ul#ingredients_list {
+ul#ingredients-list {
 	font-size: 20px;
 }
 
-ul#ingredients_list li {
+ul#ingredients-list li {
 	list-style: none;
 }
 
@@ -264,6 +265,21 @@ textarea:not(.button) {
 	border-bottom: 1px solid $light-blue;
 	width: 100%;
 	margin: 5px 0 25px 0;
+}
+
+select {
+  border: none;
+  border-radius: 0;
+  font-size: 14px;
+  color: white;
+  background-color: $medium-blue;
+  display: block;
+  margin: 5px 0 25px 0;
+}
+
+select:hover {
+  background-color: $light-blue;
+  cursor: pointer;
 }
 
 .button {

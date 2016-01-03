@@ -7,101 +7,97 @@
 	</div>
 
 	<div class="container">
-		<div class="content">
-			<form>
+		<form>
+			<p>
+				<label for="name">Name your recipe</label>
+				<input type="text" name="name" placeholder="ex: Around the World in 80 Days"/>
+			</p>
+			<p>
+				<label for="location">Enter the city, country, or region of this trip</label>
+				<input type="text" name="location" placeholder="ex: Earth"/>
+			</p>
+			<p>
+				<label for="duration">How many days will your trip last?</label>
+				<input type="number" min="0" name="duration" placeholder="ex: 80"/>
+			</p>
+			<p>
+				<label for="mainImage">Add the url of an image that represents your trip</label>
+				<input type="url" name="mainImage" placeholder="ex: http://www.around-the-world.jpeg"/>
+			</p>
+			<p>
+				<label for="summary">Add a summary of your trip here</label>
 				<p>
-					<label for="name">Name your recipe</label>
-					<input type="text" name="name" placeholder="ex: Around the World in 80 Days"/>
+					<textarea name="summary" placeholder="ex: A trip around the world in 80 days! All the way around! In 80 days! For real!!!1"></textarea>
 				</p>
-				<p>
-					<label for="location">Enter the city, country, or region of this trip</label>
-					<input type="text" name="location" placeholder="ex: Earth"/>
-				</p>
-				<p>
-					<label for="duration">How many days will your trip last?</label>
-					<input type="number" min="0" name="duration" placeholder="ex: 80"/>
-				</p>
-				<p>
-					<label for="mainImage">Add the url of an image that represents your trip</label>
-					<input type="url" name="mainImage" placeholder="ex: http://www.around-the-world.jpeg"/>
-				</p>
-				<p>
-					<label for="summary">Add a summary of your trip here</label>
-					<p>
-						<textarea name="summary" placeholder="ex: A trip around the world in 80 days! All the way around! In 80 days! For real!!!1"></textarea>
-					</p>
-				</p>
-			</form>
+			</p>
+		</form>
 
-			<input class="button" type="button" id="submitRecipe" value="Submit"/>
-		</div>
+		<input class="button" type="button" id="submitRecipe" value="Submit"/>
 	</div>
 </template>
 
 
 
 <template name="ingredientForm">
-	<div class="container">
-		<h3> Add a new ingredient to your recipe </h3>
+	<h3> Add a new ingredient to your recipe </h3>
 
-		<form>
-			<div class="form-group">
-				<label>Type</label>
-				<select id="ingredientType">
-					<option value="transportation">transportation</option>
-					<option value="lodging">lodging</option>
-					<option value="activity">activity</option>
-					<option value="food">food</option>
-				</select>
-			</div>
-			<div class="form-group">
-				<label for="name">Give it a name</label>
-				<input type="text" name="name" class="form-control" placeholder="ex: hot air balloon"/>
-			</div>
-			<div class="form-group">
-				<label for="cost">How much do you expect it will cost?</label>
-				$<input type="number" min="0" name="cost" class="form-control" placeholder="ex: 46.75"/>
-			</div>
-			<div class="form-group">
-				<label for="startTime">When will it begin?</label>
-				<input type="datetime" name="startTime" class="form-control" placeholder="ex: 1:45PM"/>
-			</div>
-			<div class="form-group">
-				<label for="duration">How long do you expect it to last?</label>
-				<input type="number" min="0" name="duration" class="form-control" placeholder="ex: 18"/>hrs
-			</div>
-			<div class="form-group">
-				<label for="address">
-					{{#if isTransportation}}
-						Where does it start?
-					{{else}}
-						Where is it?
-					{{/if}}
+	<form>
+		<p>
+			<label>What kind of ingredient is it?</label>
+			<select id="ingredientType">
+				<option value="transportation">transportation</option>
+				<option value="lodging">lodging</option>
+				<option value="activity">activity</option>
+				<option value="food">food</option>
+			</select>
+		</p>
+		<p>
+			<label for="name">Give it a name</label>
+			<input type="text" name="name" placeholder="ex: hot air balloon"/>
+		</p>
+		<p>
+			<label for="cost">How many dollars do you think it will cost?</label>
+			<input type="number" min="0" name="cost" placeholder="ex: 46.75"/>
+		</p>
+		<p>
+			<label for="startTime">When will it begin?</label>
+			<input type="datetime" name="startTime" placeholder="ex: 1:45PM"/>
+		</p>
+		<p>
+			<label for="duration">How many hours do you expect it to last?</label>
+			<input type="number" min="0" name="duration" placeholder="ex: 18"/>
+		</p>
+		<p>
+			<label for="address">
+				{{#if isTransportation}}
+					Where does it start?
+				{{else}}
+					Where is it?
+				{{/if}}
+			</label>
+			<input type="text" name="address" placeholder="ex: Paris, France"/>
+		</p>
+		{{#if isTransportation}}
+			<p>
+				<label for="endAddress">
+					Where does it end?
 				</label>
-				<input type="text" name="address" class="form-control" placeholder="ex: Paris, France"/>
-			</div>
-			{{#if isTransportation}}
-				<div class="form-group">
-					<label for="endAddress">
-						Where does it end?
-					</label>
-					<input type="text" name="endAddress" class="form-control" placeholder="ex: Spain"/>
-				</div>
-			{{/if}}
-			<div class="form-group">
-				<label for="ingredientPic">Add the url of an image</label>
-				<input type="url" name="ingredientPic" class="form-control" placeholder="ex: http://www.hot-air-balloon.jpeg"/>
-			</div>
-			<div class="form-group">
-				<label for="website">Add the url if available</label>
-				<input type="url" name="website" class="form-control" placeholder="ex: http://www.hot-air-balloon-rentals.com"/>
-			</div>
-			<div class="form-group">
-				<label for="notes">Add some additional information</label>
-				<textarea name="notes" class="form-control" placeholder="ex: Balloon that uses hot air to fly carry us around! Don't look down!"></textarea>
-			</div>
-		</form>
+				<input type="text" name="endAddress" placeholder="ex: Spain"/>
+			</p>
+		{{/if}}
+		<p>
+			<label for="ingredientPic">Add the url of an image</label>
+			<input type="url" name="ingredientPic" placeholder="ex: http://www.hot-air-balloon.jpeg"/>
+		</p>
+		<p>
+			<label for="website">Add the url if available</label>
+			<input type="url" name="website" placeholder="ex: http://www.hot-air-balloon-rentals.com"/>
+		</p>
+		<p>
+			<label for="notes">Add some additional information</label>
+			<textarea name="notes" placeholder="ex: Balloon that uses hot air to fly carry us around! Don't look down!"></textarea>
+		</p>
+	</form>
 
-		<input type="button" id="submitIngredient" value="Submit"/>
-	</div>
+	<input type="button" id="submitIngredient" class="button" value="Add"/>
 </template>
